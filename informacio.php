@@ -12,11 +12,12 @@ include("functions/class.location.php");
 //Include Objecte API Yahoo Weather
 include("functions/class.xml.parser.php");
 include("functions/class.weather.php");
-//Arxiu de funcions amb PHP
-//VARIABLES DE SESSIÓ
+
+//Google Analytics
+include("functions/google_analytics");
+
 //Si obtenim les dades d'origen, les guardem
 //Guardem les dades obtingudes de la localitat i la cerca.
-
 $lng_origen = $_SESSION["lng_origen"];
 $lat_origen = $_SESSION["lat_origen"];
 

@@ -30,6 +30,8 @@ include("functions/class.location.php");
 //include("entitats/class.connection.php");
 include("entitats/class.entitats.php");
 
+//Google Analytics
+include("functions/google_analytics");
 
 //VARIABLES DE SESSIÓ
 $lat_origen = $_SESSION["lat_origen"];

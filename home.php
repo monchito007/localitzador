@@ -28,6 +28,9 @@ include("functions/functions.php");
 //Constant amb el nom del fitxer.
 define("FITXER", "home.php");
 
+//Google Analytics
+include("functions/google_analytics");
+
 //Obtenim les coordenades
 if(($_REQUEST["lat"]!="")&&($_REQUEST['lng']!="")&&((!isset($_REQUEST["nova_localitat"])))){
     
@@ -102,6 +105,9 @@ if(isset($_REQUEST["nova_localitat"])&&($_REQUEST["nova_localitat"]!="")){
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <meta charset="iso-8859-1">
+    <meta name="description" content="Busca establiments propers a la teva població.">
+    <meta name="keywords" content="localitzador, localitzador web, buscar establiments, buscar establecimientos, localizador, web">
+    <meta name="author" content="Moisés Aguilar Miranda">
     <title>Localitzador WEB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -703,15 +709,5 @@ if ((typeof latitud != 'undefined')&&(typeof longitud != 'undefined')) {
   google.maps.event.addDomListener(window, 'load', initialize);
 }
 window.onload=initialize;
-
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-55087290-1', 'auto');
-  ga('send', 'pageview');
 
 </script>
