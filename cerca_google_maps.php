@@ -30,9 +30,6 @@ include("functions/class.location.php");
 //include("entitats/class.connection.php");
 include("entitats/class.entitats.php");
 
-//Google Analytics
-include("functions/google_analytics");
-
 //VARIABLES DE SESSIÓ
 $lat_origen = $_SESSION["lat_origen"];
 $lng_origen = $_SESSION["lng_origen"];
@@ -133,6 +130,10 @@ if((isset($lat_origen))&&(isset($lng_origen))){
 <link href='css/style.css' rel='stylesheet' type='text/css' media='screen' />
   </head>
   <body>
+        <?php
+            //Google Analytics
+            include_once("functions/google_analytics");
+        ?>
     <!-- Menú -->
     <div id="menu">
         <?php

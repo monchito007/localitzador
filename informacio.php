@@ -13,9 +13,6 @@ include("functions/class.location.php");
 include("functions/class.xml.parser.php");
 include("functions/class.weather.php");
 
-//Google Analytics
-include("functions/google_analytics");
-
 //Si obtenim les dades d'origen, les guardem
 //Guardem les dades obtingudes de la localitat i la cerca.
 $lng_origen = $_SESSION["lng_origen"];
@@ -145,6 +142,10 @@ $samples = obtenir_samples_distancia(distance_numeric($lat_origen, $lng_origen, 
 </script>
     </head>
     <body>
+        <?php
+            //Google Analytics
+            include_once("functions/google_analytics");
+        ?>
     
     <!-- Menú -->
     <div id="menu">

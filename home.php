@@ -28,9 +28,6 @@ include("functions/functions.php");
 //Constant amb el nom del fitxer.
 define("FITXER", "home.php");
 
-//Google Analytics
-include("functions/google_analytics");
-
 //Obtenim les coordenades
 if(($_REQUEST["lat"]!="")&&($_REQUEST['lng']!="")&&((!isset($_REQUEST["nova_localitat"])))){
     
@@ -148,6 +145,10 @@ if(isset($_REQUEST["nova_localitat"])&&($_REQUEST["nova_localitat"]!="")){
 
   </head>
   <body>
+      <?php
+            //Google Analytics
+            include_once("functions/google_analytics");
+        ?>
     <!-- Menú -->
     <div id="menu">
         <?php
