@@ -188,7 +188,7 @@ if(isset($_REQUEST["nova_localitat"])&&($_REQUEST["nova_localitat"]!="")){
                     echo "<section id='div_form_cerca' class='span12'>";
                     
                         echo "<form id='form_buscar' method='post' action='cerca_google_maps.php' >";
-                        echo "<input type='text' id='cerca' name='cerca' data-provide='typeahead' autofocus='autofocus'>";
+                        echo "<input type='text' id='cerca' name='cerca' data-provide='typeahead' autofocus='autofocus' placeholder='Pizza, Farmacia, Hotel, Taller mecánico...'>";
                         echo "<br>";
                         echo "<input class='btn btn-primary .btn-large' type='submit' value='Buscar Establiments'></form>";
                         echo "</form>";
