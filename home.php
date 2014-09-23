@@ -147,7 +147,7 @@ if(isset($_REQUEST["nova_localitat"])&&($_REQUEST["nova_localitat"]!="")){
   <body>
       <?php
             //Google Analytics
-            include_once("functions/google_analytics");
+            include_once("functions/google_analytics.php");
         ?>
     <!-- Menú -->
     <div id="menu">

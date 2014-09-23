@@ -132,7 +132,7 @@ if((isset($lat_origen))&&(isset($lng_origen))){
   <body>
         <?php
             //Google Analytics
-            include_once("functions/google_analytics");
+            include_once("functions/google_analytics.php");
         ?>
     <!-- Menú -->
     <div id="menu">

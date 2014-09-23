@@ -144,7 +144,7 @@ $samples = obtenir_samples_distancia(distance_numeric($lat_origen, $lng_origen, 
     <body>
         <?php
             //Google Analytics
-            include_once("functions/google_analytics");
+            include_once("functions/google_analytics.php");
         ?>
     
     <!-- Menú -->
