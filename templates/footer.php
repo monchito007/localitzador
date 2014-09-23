@@ -1,0 +1,1 @@
+<p>&copy; LocalitzadorWeb <?php echo Date('Y'); ?></p>
